@@ -5,9 +5,9 @@ const supermarketSchema = new mongoose.Schema({
     urlBase: { type: String, required: true },
     endpoints: [{ type: String }],
     selectores: {
-        container: { type: String, required: true },
         precio: { type: String, required: true },
         nombre: { type: String, required: true }
+        // Eliminamos container
     },
     productos: [
         {
